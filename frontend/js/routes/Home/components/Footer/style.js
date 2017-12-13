@@ -6,6 +6,7 @@ const style = () => ({
   container: {
     borderTop: `1px solid ${grey[200]}`,
     paddingTop: 10,
+    paddingBottom: 10,
   },
   footerText: {
     fontSize,
