@@ -1,0 +1,68 @@
+// The main config for webpack, you probably don't need to edit this.
+const webpack = require('webpack');
+const path = require('path');
+const loaders = require('./loaders');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const HOST = process.env.HOST || '127.0.0.1';
+const PORT = process.env.PORT || '8080';
+
+loaders.push({
+  test: /\.scss$/,
+  loaders: ['style-loader', 'css-loader?importLoaders=1', 'sass-loader'],
+  exclude: ['node_modules'],
+});
+
+module.exports = {
+  entry: { main: './frontend/js/main.js' },
+  devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
+  output: {
+    publicPath: '/assets/build',
+    path: path.join(process.cwd(), 'assets', 'build'),
+    filename: '[name].js',
+    // Settings to better support source map file paths
+    devtoolModuleFilenameTemplate: '[resourcePath]',
+    devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]',
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    alias: { js: path.join(process.cwd(), 'frontend', 'js') },
+  },
+  module: { loaders },
+  devServer: {
+    contentBase: './frontend',
+    // enable HMR
+    hot: true,
+    // embed the webpack-dev-server runtime into the bundle
+    inline: true,
+    // serve index.html in place of 404 responses to allow HTML5 history
+    historyApiFallback: true,
+    port: PORT,
+    host: HOST,
+    watchOptions: {
+      poll: 1000,
+    },
+  },
+  plugins: [
+    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'frontend/index.html',
+      files: {
+        js: ['[name].js'],
+      },
+    }),
+    new webpack.ProvidePlugin({
+      _: 'lodash',
+      axios: 'axios',
+    }),
+    new webpack.DefinePlugin({
+      env: {
+        AUTH0_CLIENT_ID: process.env.AUTH0_CLIENT_ID,
+        AUTH0_DOMAIN: process.env.AUTH0_DOMAIN,
+        API_URL: process.env.API_URL,
+      },
+    }),
+  ],
+};
