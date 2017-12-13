@@ -5,7 +5,7 @@ const style = () => ({
     paddingTop: 50,
   },
   findMe: {
-    padding: 10,
+    padding: '10 0',
     maxWidth: 400,
     margin: '25 auto',
     background: grey[800],

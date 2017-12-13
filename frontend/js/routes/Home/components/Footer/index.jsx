@@ -20,12 +20,12 @@ export default class Footer extends Component {
 
     return (
       <Grid container className={classes.container}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
           <Typography type="subheading" align="center" className={classes.footerText}>
             Made with <Heart className={classes.heart} /> in Indianapolis, IN
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
           <Typography type="subheading" align="center" className={classes.footerText}>
             <a href="mailto:kalob@kalob.net">kalob@kalob.net</a>
           </Typography>

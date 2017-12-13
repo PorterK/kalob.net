@@ -25,10 +25,10 @@ export default class Project extends Component {
     return (
       <Grid item xs={12}>
         <Grid container justify="center" alignItems="center" className={classes.project}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} lg={4}>
             <img src={image} className={classes.img} alt="logo" />
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} lg={8}>
             <Typography type="title" className={classes.title}>
               {name}
             </Typography>

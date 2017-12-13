@@ -6,7 +6,7 @@ const style = theme => ({
   img: {
     height: imgHeight,
     float: 'right',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('lg')]: {
       margin: '0 auto',
       float: 'none',
       display: 'block',
@@ -14,12 +14,18 @@ const style = theme => ({
   },
   title: {
     paddingTop: imgHeight / 4,
+    [theme.breakpoints.down('lg')]: {
+      margin: '5 50',
+    },
   },
   desc: {
     fontFamily: 'Roboto',
     '& $a': {
       textDecoration: 'none',
       color: blue[500],
+    },
+    [theme.breakpoints.down('lg')]: {
+      margin: '5 50',
     },
   },
   github: {
