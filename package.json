@@ -1,7 +1,7 @@
 {
-  "name": "react-bootsrap",
+  "name": "kalob.net",
   "version": "1.0.0",
-  "description": "A foundation for rapid React prototypes",
+  "description": "My personal portfolio site",
   "main": "index.js",
   "dependencies": {
     "lodash": "^4.17.4",
@@ -33,7 +33,7 @@
     "html-webpack-plugin": "^2.26.0",
     "jest": "^21.3.0-beta.2",
     "loglevel": "^1.4.1",
-    "material-ui": "next",
+    "material-ui": "^1.0.0-beta.22",
     "material-ui-icons": "^1.0.0-beta.17",
     "postcss-loader": "^1.2.2",
     "prop-types": "^15.6.0",
@@ -47,15 +47,14 @@
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   },
+  "resolutions": {
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
   "scripts": {
     "start": "node index.js",
     "webpack-dev-server": "webpack-dev-server --config config/webpack/main.js --colors --hot --inline --host 0.0.0.0 --port 8080",
     "build": "webpack --config config/webpack/production.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "ssh://developertown@developertown.visualstudio.com:22/DefaultCollection/DT%20Starts/_git/react-bootsrap"
-  },
-  "author": "DT Starts",
-  "license": "ISC"
+  "author": "Kalob Porter"
 }
