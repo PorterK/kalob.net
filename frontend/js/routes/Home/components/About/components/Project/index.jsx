@@ -37,7 +37,7 @@ export default class Project extends Component {
             </div>
           </Grid>
           <Grid item xs={12}>
-            <IconButton href={link} className={classes.github}>
+            <IconButton href={link} target="_blank" className={classes.github}>
               <GitHub />
             </IconButton>
           </Grid>
