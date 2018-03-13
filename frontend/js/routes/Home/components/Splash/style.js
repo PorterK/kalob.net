@@ -1,7 +1,9 @@
+import Background from 'img/bg.png';
+
 const styles = () => ({
   main: {
     height: '100vh',
-    background: 'url(\'img/bg.png\')',
+    background: `url(${Background})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
   },

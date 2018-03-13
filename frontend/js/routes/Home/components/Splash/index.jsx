@@ -5,6 +5,8 @@ import { withStyles } from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
+import Logo from 'img/logo.png';
+
 import style from './style';
 
 @withStyles(style)
@@ -21,7 +23,7 @@ export default class Splash extends Component {
         <Grid item>
           <Grid container>
             <Grid item xs={12}>
-              <img src="img/logo.png" alt="my face" className={classes.logo} />
+              <img src={Logo} alt="my face" className={classes.logo} />
             </Grid>
             <Grid item xs={12}>
               <Typography align="center" type="display2" className={classes.splashText}>

@@ -5,6 +5,10 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 import { withStyles } from 'material-ui/styles';
 
+import GuardianNews from 'img/guardian_news.jpg';
+import Twitter from 'img/twitter.png';
+import Dark from 'img/dark.svg';
+
 import Project from './components/Project';
 
 import style from './style';
@@ -19,7 +23,7 @@ const projectData = [
       </p>
     ),
     link: 'https://github.com/PorterK/GuardianJSClient',
-    image: 'img/guardian_news.jpg',
+    image: GuardianNews,
   },
   {
     name: 'ThePoliticNews',
@@ -30,17 +34,17 @@ const projectData = [
       </p>
     ),
     link: 'https://github.com/PorterK/ThePoliticNews',
-    image: 'img/twitter.png',
+    image: Twitter,
   },
   {
     name: 'DnD Ninja',
     desc: (
       <p>
-        As a past time, developing <a href="https://dnd.ninja">DnD Ninja</a> is the biggest, most ambitious app I have started yet.
+        As a pastime, developing <a href="https://dnd.ninja">DnD Ninja</a> is the biggest, most ambitious app I have started yet.
       </p>
     ),
     link: 'https://github.com/dnd-ninja',
-    image: 'img/dark.svg',
+    image: Dark,
   },
 ];
 
