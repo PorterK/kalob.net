@@ -9,6 +9,8 @@ import {
   Route,
 } from 'react-router-dom';
 
+import './favicon.ico';
+
 import App from './routes/App';
 import Home from './routes/Home';
 
