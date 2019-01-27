@@ -2,7 +2,7 @@ import Logo from 'img/logo.png';
 
 const styles = theme => ({
   main: {
-    height: '100vh',
+    minHeight: '100vh',
     background: 'rgb(45, 45, 45)',
   },
   code: {
