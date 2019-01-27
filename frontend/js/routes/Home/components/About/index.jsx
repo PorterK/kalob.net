@@ -32,7 +32,6 @@ const projectData = [
         <a href="https://robovise.com">Robovise</a> is a robo advisor built for the modern world.
       </p>
     ),
-    link: 'https://github.com/PorterK/ThePoliticNews',
     image: Robovise,
   },
   {
