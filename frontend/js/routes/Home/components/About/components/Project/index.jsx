@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Grid from 'material-ui/Grid';
-import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
-import { withStyles } from 'material-ui/styles';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import { withStyles } from '@material-ui/core/styles';
 
 import GitHub from 'js/common/GitHub';
 
@@ -38,7 +38,7 @@ export default class Project extends Component {
           </Grid>
           <Grid item xs={12}>
             <IconButton href={link} target="_blank" className={classes.github}>
-              <GitHub />
+              { link && <GitHub /> }
             </IconButton>
           </Grid>
           <Grid item xs={12}>

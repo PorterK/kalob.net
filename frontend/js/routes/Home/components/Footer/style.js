@@ -1,4 +1,4 @@
-import { red, blue, grey } from 'material-ui/colors';
+import { red, blue, grey } from '@material-ui/core/colors';
 
 const fontSize = 16;
 

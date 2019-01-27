@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Grid from 'material-ui/Grid';
-import Typography from 'material-ui/Typography';
-import { withStyles } from 'material-ui/styles';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 
 import GuardianNews from 'img/guardian_news.jpg';
-import Twitter from 'img/twitter.png';
-import Dark from 'img/dark.svg';
+import Robovise from 'img/robovise.png';
+import SumpThing from 'img/sump-thing.png';
 
 import Project from './components/Project';
 
@@ -26,25 +26,24 @@ const projectData = [
     image: GuardianNews,
   },
   {
-    name: 'ThePoliticNews',
+    name: 'Robovise',
     desc: (
       <p>
-        <a href="http://twitter.com/ThePoliticNews">@ThePoliticNews</a> is a twitter bot that I wrote and administered throughout the
-        2016 election year.
+        <a href="https://robovise.com">Robovise</a> is a robo advisor built for the modern world.
       </p>
     ),
     link: 'https://github.com/PorterK/ThePoliticNews',
-    image: Twitter,
+    image: Robovise,
   },
   {
-    name: 'DnD Ninja',
+    name: 'Sump Thing',
     desc: (
       <p>
-        As a pastime, developing <a href="https://dnd.ninja">DnD Ninja</a> is the biggest, most ambitious app I have started yet.
+        <a href="https://github.com/pyazo/sump-thing">Sump Thing</a> is an open source aquarium monitoring hardware/software solution.
       </p>
     ),
-    link: 'https://github.com/dnd-ninja',
-    image: Dark,
+    link: 'https://github.com/pyazo/sump-thing',
+    image: SumpThing,
   },
 ];
 
@@ -63,11 +62,11 @@ export default class About extends Component {
           projectData.map(data => <Project {...data} />)
         }
         <Grid item xs={12}>
-          <Typography type="subheading" align="center">
-            <div className={classes.findMe}>
+          <div className={classes.findMe}>
+            <Typography type="subheading" align="center">
               Find me on <a href="https://github.com/PorterK">GitHub</a> to see more open source work.
-            </div>
-          </Typography>
+            </Typography>
+          </div>
         </Grid>
       </Grid>
     );

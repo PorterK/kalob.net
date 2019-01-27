@@ -1,7 +1,7 @@
 // component from: https://github.com/mui-org/material-ui/blob/v1-beta/docs/src/modules/components/GitHub.js
 
 import React from 'react';
-import SvgIcon from 'material-ui/SvgIcon';
+import SvgIcon from '@material-ui/core/SvgIcon';
 
 function GitHub(props) {
   return (

@@ -1,4 +1,4 @@
-import { blue } from 'material-ui/colors';
+import { blue } from '@material-ui/core/colors';
 
 const imgHeight = 100;
 
@@ -6,26 +6,29 @@ const style = theme => ({
   img: {
     height: imgHeight,
     float: 'right',
-    [theme.breakpoints.down('lg')]: {
-      margin: '0 auto',
+    margin: '0 auto',
+    display: 'block',
+    [theme.breakpoints.down('md')]: {
+      margin: '10 auto',
       float: 'none',
-      display: 'block',
     },
   },
   title: {
     paddingTop: imgHeight / 4,
-    [theme.breakpoints.down('lg')]: {
-      margin: '5 50',
+    margin: '5 50',
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
     },
   },
   desc: {
     fontFamily: 'Roboto',
+    margin: '5 50',
     '& $a': {
       textDecoration: 'none',
       color: blue[500],
     },
-    [theme.breakpoints.down('lg')]: {
-      margin: '5 50',
+    [theme.breakpoints.down('md')]: {
+      textAlign: 'center',
     },
   },
   github: {
@@ -33,7 +36,7 @@ const style = theme => ({
     marginRight: '20%',
   },
   dots: {
-    width: '50%',
+    width: 'calc( 50% - 2px )',
     content: '',
     borderRight: '4px dotted #c1c1c1',
     position: 'absolute',
