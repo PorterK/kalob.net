@@ -43,6 +43,9 @@ const style = theme => ({
     height: 50,
     marginTop: -50,
   },
+  noLinkDots: {
+    marginTop: '-25px !important',
+  },
 });
 
 export default style;

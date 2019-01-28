@@ -42,7 +42,7 @@ export default class Project extends Component {
             </IconButton>
           </Grid>
           <Grid item xs={12}>
-            <div className={classes.dots} />
+            <div className={`${classes.dots} ${!link && classes.noLinkDots}`} />
           </Grid>
         </Grid>
       </Grid>
