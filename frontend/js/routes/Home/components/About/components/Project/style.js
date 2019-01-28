@@ -39,7 +39,6 @@ const style = theme => ({
     width: 'calc( 50% - 2px )',
     content: '',
     borderRight: '4px dotted #c1c1c1',
-    position: 'absolute',
     height: 50,
     marginTop: -50,
   },
