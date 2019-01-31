@@ -3,11 +3,8 @@ My personal/portfolio website written totally in React using material-ui.
 
 # Installation
 
-- Install Docker
-- Run `docker-compose up`
-
-### Why docker?
-Docker allows me to work on the app from multiple machines without worry of the environment changing
+- `yarn install`
+- `yarn dev`
 
 # Contributions
 

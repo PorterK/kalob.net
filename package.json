@@ -54,7 +54,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "webpack-dev-server": "webpack-dev-server --config config/webpack/main.js --colors --hot --inline --host 0.0.0.0 --port 8080",
+    "dev": "webpack-dev-server --config config/webpack/main.js --colors --hot --inline --host 0.0.0.0 --port 8080",
     "build": "webpack --config config/webpack/production.js"
   },
   "author": "Kalob Porter"
