@@ -1,4 +1,7 @@
 language: node_js
+sudo: required
+cache:
+  yarn: true
 script: build
 deploy:
   provider: s3
