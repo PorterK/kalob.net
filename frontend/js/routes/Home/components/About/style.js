@@ -8,10 +8,10 @@ const style = () => ({
     padding: 10,
     '& p': {
       color: 'white !important',
-      fontWeight: '200px !important',
-      padding: '10 0',
+      fontWeight: '200 !important',
+      padding: '10px 0',
       maxWidth: 400,
-      margin: '25 auto',
+      margin: '25px auto',
       background: grey[800],
       borderRadius: 8,
     },

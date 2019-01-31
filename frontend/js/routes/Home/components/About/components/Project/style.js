@@ -15,14 +15,14 @@ const style = theme => ({
   },
   title: {
     paddingTop: imgHeight / 4,
-    margin: '5 50',
+    margin: '5px 50px',
     [theme.breakpoints.down('md')]: {
       textAlign: 'center',
     },
   },
   desc: {
     fontFamily: 'Roboto',
-    margin: '5 50',
+    margin: '5px 50px',
     '& $a': {
       textDecoration: 'none',
       color: blue[500],
