@@ -11,7 +11,7 @@ deploy:
   secret_access_key:
     secure: dSzQSpAjCTyoZtGpsNshO0GM3f+ryWts2Gif/jW8M/f961pgHknjGPZ4eG5m9oFwXAPc/J1sD7bR7EggyXAjys2LUbJ3vjwb+5MAg2OU6KIDNGgfFOANDw+Cj31+jw2z2+mUz1p9+IcLm3g1BtcCqsuoKUTEcYH/xYNqV0hnyMnoNMZSWZPY6MLJ0t9EGCDMrwu86dEGlFXOSCBPy5mmXGjZFSAaCWVLveASnabVsUr1mDjRreMbu6SUzgDW7LbXSkqCd0TYI2gXG+/PEvfqUmBDU8iAzyuKsa9YTcUBT1Dn5czHIuI0k4Qb4HSLdx7HTX22XJPWfKeqjAAFjuEEmXJqaRR4ipMVA2Ok2oqu09rXAhjzsji+BF9Agvq9uJDtw8jjBtxueL29dPic5P0gjeKfHutwhnqUve8Hbryn2btE8JZEPS7DDA1exqy40Q3N69Vr8cJ7lcXfXuQdzmFz4XZPyIVe7a+RygCNXRi6hBD7LIS6EFtyAF3XdToPzd5nfNNZ0OBqhItvctANW/oIBuZ8MW8Xwgs561Uxks01eQ2x4RaNzn85jpBfVBxu0x85DXdWzuZotRKdD5e5cdHjBQ+ngX9gXcr/H9IB0h7pikDIPBIwmhbe45tOsGA1tV3QCniA296/qBSo0TbPEP5OILZOQfM7ssyAczGmFH6CgYU=
   bucket: kalob.net
-  local-dir: build
+  local-dir: ./build
   acl: public_read
   on:
     repo: PorterK/kalob.net
