@@ -44,6 +44,7 @@
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^15.6.1",
     "style-loader": "0.13.1",
+    "travis-ci-cloudfront-invalidation": "^1.1.0",
     "url-loader": "0.5.7",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
