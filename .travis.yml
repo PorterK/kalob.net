@@ -14,5 +14,6 @@ deploy:
   skip_cleanup: true
   local-dir: build
   acl: public_read
+  region: us-east-2
   on:
     repo: PorterK/kalob.net
