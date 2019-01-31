@@ -17,12 +17,10 @@ module.exports = {
   entry: { main: './frontend/js/main.js' },
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   output: {
-    publicPath: '/assets/build',
-    path: path.join(process.cwd(), 'assets', 'build'),
+    publicPath: '/',
+    path: path.join(process.cwd(), 'build'),
     filename: '[name].js',
-    // Settings to better support source map file paths
-    devtoolModuleFilenameTemplate: '[resourcePath]',
-    devtoolFallbackModuleFilenameTemplate: '[resourcePath]?[hash]',
+    pathinfo: false,
   },
   resolve: {
     extensions: ['.js', '.jsx'],
