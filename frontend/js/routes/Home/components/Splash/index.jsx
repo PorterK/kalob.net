@@ -41,7 +41,7 @@ export default class Splash extends Component {
       architecture: [
         'data modeling', 'software design',
         'server architecture'
-      ]
+      ],
       basics: [
         'html', 'css', 'sass',
         'sql', 'mobile', ${animationText}
@@ -58,7 +58,7 @@ export default class Splash extends Component {
       ],
       architecture: [
         'data modeling', 'software design', 'server architecture'
-      ]
+      ],
       basics: [
         'html', 'css', 'sass', 'sql', ${animationText}
       ],
