@@ -8,8 +8,8 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Splash />
-        <About />
+        <Splash { ...this.props } />
+        <About  { ...this.props } />
         <Footer />
       </div>
     );

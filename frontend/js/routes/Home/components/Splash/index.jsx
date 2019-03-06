@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ScrollMagic from 'scrollmagic';
 
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -16,10 +17,16 @@ export default class Splash extends Component {
   static propTypes = {
     classes: PropTypes.object.isRequired,
     width: PropTypes.string.isRequired,
+    controller: PropTypes.object.isRequired,
+  }
+
+  state = {
+    animationText: '',
   }
 
   get skills() {
     const { width } = this.props;
+    const { animationText } = this.state;
 
     if (width === 'xs') {
       return `
@@ -37,7 +44,7 @@ export default class Splash extends Component {
       ]
       basics: [
         'html', 'css', 'sass',
-        'sql', 'mobile web design'
+        'sql', 'mobile', ${animationText}
       ],
       `;
     }
@@ -53,16 +60,52 @@ export default class Splash extends Component {
         'data modeling', 'software design', 'server architecture'
       ]
       basics: [
-        'html', 'css', 'sass', 'sql'
+        'html', 'css', 'sass', 'sql', ${animationText}
       ],
       `;
+  }
+
+  scene = new ScrollMagic.Scene({
+    offset: 0,
+    duration: 1000,
+  });
+
+  progressAnmiation = (e) => {
+    const { animationText, lastStep } = this.state;
+
+     const finalAnimationText = ' \'animation\'';
+
+     const { progress } = e;
+
+     const progression = progress.toFixed(2) * 100;
+
+     const incrementPercent = 100 / finalAnimationText.length;
+
+     const step = Math.floor(progression / incrementPercent);
+
+     if (step === lastStep) return;
+
+     this.setState({
+      animationText: finalAnimationText.substring(0, step),
+      lastStep: step
+    });
+  }
+
+  componentDidMount() {
+    const { controller } = this.props;
+
+    this.scene.setPin('#test');
+
+    this.scene.on('progress', this.progressAnmiation);
+
+    controller.addScene(this.scene);
   }
 
   render() {
     const { classes } = this.props;
 
     return (
-      <Grid container justify="center" alignItems="center" className={classes.main}>
+      <Grid container justify="center" alignItems="center" className={classes.main} id="test">
         <Grid item>
           <Grid container>
             <Grid item xs={12} className={classes.code}>

@@ -8,7 +8,8 @@
     "@material-ui/icons": "^3.0.2",
     "lodash": "^4.17.4",
     "react": "^16.0.0",
-    "react-syntax-highlighter": "^10.1.2"
+    "react-syntax-highlighter": "^10.1.2",
+    "scrollmagic": "^2.0.6"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
