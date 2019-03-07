@@ -1,8 +1,12 @@
 import { blue, grey } from '@material-ui/core/colors';
 
-const style = () => ({
+const style = theme => ({
   container: {
     paddingTop: 50,
+    paddingBottom: 50,
+    [theme.breakpoints.down('md')]: {
+      paddingBottom: 'initial',
+    },
   },
   findMe: {
     padding: 10,
