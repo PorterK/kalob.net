@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/styles';
 
 import LinkIcon from '@material-ui/icons/Link';
 
-import Github from 'js/common/Github';
+import Github from 'js/common/GitHub';
 
 import styles from './style';
 
