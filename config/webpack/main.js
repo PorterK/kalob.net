@@ -1,17 +1,12 @@
 // The main config for webpack, you probably don't need to edit this.
 const webpack = require('webpack');
 const path = require('path');
-const loaders = require('./loaders');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const rules = require('./rules');
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = process.env.PORT || '8080';
-
-loaders.push({
-  test: /\.scss$/,
-  loaders: ['style-loader', 'css-loader?importLoaders=1', 'sass-loader'],
-  exclude: ['node_modules'],
-});
 
 module.exports = {
   entry: { main: './frontend/js/main.js' },
@@ -29,7 +24,7 @@ module.exports = {
       img: path.join(process.cwd(), 'frontend', 'img'),
     },
   },
-  module: { loaders },
+  module: { rules },
   devServer: {
     contentBase: './frontend',
     // enable HMR

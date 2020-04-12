@@ -61,11 +61,4 @@ module.exports = {
         "functions": "ignore"
     }]
     },
-    "settings": {
-      "import/resolver": {
-        "webpack": {
-          "config": path.join(__dirname, "/config/webpack/main.js"),
-        }
-      },
-    }
   };
