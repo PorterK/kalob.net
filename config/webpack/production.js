@@ -1,8 +1,9 @@
 // This webpack config applies to production code
 const webpack = require('webpack');
 const path = require('path');
-const loaders = require('./loaders');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const loaders = require('./loaders');
 
 module.exports = {
   entry: { main: './frontend/js/main.js' },
