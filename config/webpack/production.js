@@ -7,6 +7,7 @@ const rules = require('./rules');
 
 module.exports = {
   entry: { main: './frontend/js/main.js' },
+  mode: 'production',
   output: {
     publicPath: '/',
     path: path.join(process.cwd(), 'build'),
