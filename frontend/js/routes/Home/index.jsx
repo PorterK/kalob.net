@@ -44,7 +44,7 @@ export default function Home() {
           <Grid container>
             <Grid item xs={6}>
               <Typography variant="body2" className={classes.bottomText}>
-                &#169; Kalob.NET 2020
+                &copy; Kalob.NET 2020
               </Typography>
             </Grid>
             <Grid item xs={6}>
