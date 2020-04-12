@@ -9,6 +9,7 @@ const style = (theme) => ({
       position: 'absolute',
       height: 200,
       marginTop: 200,
+      pointerEvents: 'none',
     },
     background: `url(${letters}), linear-gradient(to bottom, ${theme.palette.gradient.top}, ${theme.palette.gradient.bottom})`,
   },
