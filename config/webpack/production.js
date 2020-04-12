@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const loaders = require('./loaders');
+const rules = require('./rules');
 
 module.exports = {
   entry: { main: './frontend/js/main.js' },
@@ -19,7 +19,7 @@ module.exports = {
       img: path.join(process.cwd(), 'frontend', 'img'),
     },
   },
-  module: { loaders },
+  module: { rules },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
