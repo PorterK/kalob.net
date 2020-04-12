@@ -12,6 +12,9 @@ module.exports = {
     path: path.join(process.cwd(), 'build'),
     filename: '[name].js',
   },
+  optimization: {
+    minimize: true,
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
@@ -21,14 +24,6 @@ module.exports = {
   },
   module: { rules },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        screw_ie8: true,
-        drop_console: true,
-        drop_debugger: true,
-      },
-    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: 'frontend/index.html',
