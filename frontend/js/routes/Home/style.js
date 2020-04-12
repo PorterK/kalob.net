@@ -21,6 +21,7 @@ const style = (theme) => ({
       position: 'absolute',
       marginTop: -4,
       marginLeft: -4,
+      pointerEvents: 'none',
     },
     '&:after': {
       content: '"kalob.net"',
@@ -28,6 +29,7 @@ const style = (theme) => ({
       position: 'absolute',
       marginLeft: -218,
       marginTop: -8,
+      pointerEvents: 'none',
     },
   },
   menu: {
