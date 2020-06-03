@@ -44,7 +44,7 @@ const data = [
     to oblige. After working there for a couple of months I ended up securing a spot as a full time software engineer. At this time I dropped out of college 
     to persue a career doing startups. This is where I have leveled up the most in my career. I started in React but was quickly asked to expand my knowledge to other
     parts of the technology. I spent extended lengths of time working in Node.js, doing Dev Ops, working with co-founders to make architectual decisions, creating
-    several data models, and even architecting entire systems that are in production today.
+    several data models, and even architecting entire systems that are in production today. I co-founded 10 companies with DT Starts.
     `,
   },
 ];

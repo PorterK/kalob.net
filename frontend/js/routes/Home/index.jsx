@@ -26,7 +26,7 @@ export default function Home() {
         <Grid item xs={12}>
           <Typography variant="h6" align="center">
             <Link className={classes.link} href="/projects">
-             projects
+              projects
             </Link>
           </Typography>
           <Typography variant="h6" align="center">

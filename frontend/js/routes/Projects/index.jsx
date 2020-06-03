@@ -43,6 +43,22 @@ const projectData = [
     ],
   },
   {
+    name: 'DQO Index Calculator',
+    desc: (
+      <>
+        A calculator to determine the isocyanate index and theoretical isocyanurate of
+        specified ingredients.
+      </>
+    ),
+    link: {
+      type: 'site',
+      url: 'https://www.dqoconsulting.com/new-page',
+    },
+    tech: [
+      'JS', 'React', 'Heroku',
+    ],
+  },
+  {
     name: 'Sump Thing',
     desc: (
       <>
