@@ -39,6 +39,11 @@ export default function Home() {
               blog
             </Link>
           </Typography>
+          <Typography variant="h6" align="center" className={classes.link}>
+            <Link href="https://matchday.pizza" className={classes.link} target="_blank" rel="noopener">
+              pizza
+            </Link>
+          </Typography>
         </Grid>
         <Grid item xs={12}>
           <Grid container>
