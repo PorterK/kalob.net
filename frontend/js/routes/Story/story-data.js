@@ -42,9 +42,9 @@ const data = [
     called DT Starts. This company would look back on the roots of DeveloperTown and work with startups to trade hours for equity and exist as the
     techincal co-founder. I got to know a few of the employees of DeveloperTown who had moved to DT Starts and I asked for a transfer. DeveloperTown was happy
     to oblige. After working there for a couple of months I ended up securing a spot as a full time software engineer. At this time I dropped out of college 
-    to persue a career doing startups. This is where I have leveled up the most in my career. I started in React but was quickly asked to expand my knowledge to other
-    parts of the technology. I spent extended lengths of time working in Node.js, doing Dev Ops, working with co-founders to make architectual decisions, creating
-    several data models, and even architecting entire systems that are in production today. I co-founded 10 companies with DT Starts.
+    to pursue a career doing startups. This is where I have leveled up the most in my career. I started in React but was quickly asked to expand my knowledge to other
+    pieces of application development. I spent extended lengths of time working in Node.js, doing Dev Ops, working with co-founders to make architectual decisions, creating
+    several data models, and even architecting entire systems that are in production today. So far I've co-founded 10 companies with DT Starts.
     `,
   },
 ];
