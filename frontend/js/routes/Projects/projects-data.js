@@ -81,18 +81,18 @@ const data = [
     ],
   },
   {
-    name: 'Wedding App',
+    name: 'Flappy Bird Clone',
     desc: (
       <>
-        An app to assist in tracking RSVPs and mass communication for my wedding.
+        A flappy bird clone using only CSS, HTML, and JavaScript - no images or assets.
       </>
     ),
     link: {
       type: 'site',
-      url: 'https://porter.family',
+      url: 'https://flappy.kalob.net',
     },
     tech: [
-      'JS', 'Ember', 'Firebbase', 'S3',
+      'JS', 'React', 'CSS',
     ],
   },
 ];
