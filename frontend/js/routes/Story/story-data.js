@@ -1,5 +1,15 @@
 const data = [
   {
+    name: '1998 - Growing up',
+    body: `I grew up in Indianapolis in a very modest home, several of them actually. Growing up my family lived in almost 20 different
+    houses before I turned 18. Moving from house to house & living in poverty taught me many valuable lessons. Going to 3 different school
+    districts gave me a lot of perspective about how different life can be, even when you live so close. I went to Wayne Township schools,
+    Indianapolis Public Schools, and Decatur Township Schools. Growing up like taught me the value of a dollar, how to stretch money, but
+    most of all it taught me how much of a privledge it is to grow up in a stable home. Later in life I would make it my life's goal to be
+    able to provide a stable home for my future children.
+    `,
+  },
+  {
     name: '2010 - Intro to the web',
     body: `My first steps on the web were of social neccessity. MySpace, the first website I can remember ever visiting,
     was great for it's social enrichment but I can retrospectively say that the biggest impact it had on my life was
@@ -44,7 +54,16 @@ const data = [
     to oblige. After working there for a couple of months I ended up securing a spot as a full time software engineer. At this time I dropped out of college 
     to pursue a career doing startups. This is where I have leveled up the most in my career. I started in React but was quickly asked to expand my knowledge to other
     pieces of application development. I spent extended lengths of time working in Node.js, doing Dev Ops, working with co-founders to make architectual decisions, creating
-    several data models, and even architecting entire systems that are in production today. So far I've co-founded 10 companies with DT Starts.
+    several data models, and even architecting entire systems that are in production today. So far I've helped co-found 13 companies with DT Starts.
+    `,
+  },
+  {
+    name: '2021 - Swarm Solutions',
+    body: ` In September 2021, after 5 years with DT/DT Starts, I decided it was time for me to move on. I had gained the experience of building a startup several times over.
+    While I didn't experience the risk the founders had, I was able to experience the early formations of a company - knowing how to build processes & build a team, it was time for
+    me to move on to solve something that was holding me back. When a company was ready for scale, I didn't have the answers. I had never worked in a company of more than 40 people.
+    This is where Swarm Solutions comes in - with Swarm I have been able to experience working in companies with thousands of employees and millions of users. This experience has been
+    invaluable on my quest to become to the best software engineer that I can be.
     `,
   },
 ];

@@ -80,21 +80,6 @@ const data = [
       'JS', 'React', 'Node', 'Heroku',
     ],
   },
-  {
-    name: 'Flappy Bird Clone',
-    desc: (
-      <>
-        A flappy bird clone using only CSS, HTML, and JavaScript - no images or assets.
-      </>
-    ),
-    link: {
-      type: 'site',
-      url: 'https://flappy.kalob.net',
-    },
-    tech: [
-      'JS', 'React', 'CSS',
-    ],
-  },
 ];
 
 export default data;
