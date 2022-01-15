@@ -1,0 +1,33 @@
+name: Deploy
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: build & deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '16.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Compile project
+        run: yarn build
+      - name: sync
+        run: aws s3 sync --acl public-read ./build s3://${{ secrets.S3_BUCKET_NAME }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
+      - name: invalidate cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFRONT_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFRONT_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
+
+      
