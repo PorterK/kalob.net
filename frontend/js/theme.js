@@ -23,16 +23,16 @@ const theme = createMuiTheme({
       bottom: '#68abff',
     },
     gradient: {
-      top: '#ff9898',
-      bottom: '#ff8bf6',
+      top: '#fa8dee',
+      bottom: '#ff8b8f',
     },
     projectsGradient: {
       top: '#5289ff',
-      bottom: '#6dc277',
+      bottom: '#057713',
     },
     storyGradient: {
-      top: '#ce5e00',
-      bottom: '#f1c62d',
+      top: '#3800b1',
+      bottom: '#5f3c5d',
     },
   },
   sizes: {
