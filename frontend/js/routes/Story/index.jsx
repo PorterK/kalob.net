@@ -45,7 +45,7 @@ export default function Story() {
       <Grid item xs={12} sm={8}>
         <Grid container justify="space-between">
           <Typography variant="body2" className={classes.bottomText}>
-            &copy; Kalob.NET 2020
+            &copy; Kalob.NET 2022
           </Typography>
           <Typography variant="body2" className={classes.bottomText}>
             Indianapolis, IN
