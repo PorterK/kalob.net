@@ -10,6 +10,7 @@ const PORT = process.env.PORT || '8080';
 
 module.exports = {
   entry: { main: './frontend/js/main.js' },
+  mode: 'development',
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   output: {
     publicPath: '/',
@@ -24,25 +25,23 @@ module.exports = {
       img: path.join(process.cwd(), 'frontend', 'img'),
     },
   },
+  optimization: {
+    moduleIds: 'named',
+  },
   module: { rules },
   devServer: {
-    contentBase: './frontend',
     // enable HMR
     hot: true,
-    // embed the webpack-dev-server runtime into the bundle
-    inline: true,
     // serve index.html in place of 404 responses to allow HTML5 history
     historyApiFallback: true,
     port: PORT,
     host: HOST,
-    watchOptions: {
-      poll: 1000,
+    client: {
+      overlay: true,
     },
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: 'frontend/index.html',
       files: {

@@ -15,7 +15,7 @@ module.exports = {
     filename: '[name].[contenthash].gz.js',
   },
   optimization: {
-    minimize: true,
+    minimize: false,
     splitChunks: {
       chunks: 'all',
     },
@@ -29,11 +29,10 @@ module.exports = {
   },
   module: { rules },
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: 'frontend/index.html',
       files: {
-        js: ['[name].js'],
+        js: ['[name].gz.js'],
       },
     }),
     new CompressionPlugin({
