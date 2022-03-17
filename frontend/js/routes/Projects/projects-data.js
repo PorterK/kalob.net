@@ -2,6 +2,36 @@ import React from 'react';
 
 const data = [
   {
+    name: 'Graston Technique Portal',
+    desc: (
+      <>
+        A full stack web app to act as a portal for Graston clinicians.
+      </>
+    ),
+    link: {
+      type: 'site',
+      url: 'https://app.grastontechnique.com',
+    },
+    tech: [
+      'JS', 'React', 'NextJS', 'Node', 'Heroku',
+    ],
+  },
+  {
+    name: 'Lumatic App',
+    desc: (
+      <>
+        A web platform for businesses and groups to enrich their brands through photography
+      </>
+    ),
+    link: {
+      type: 'site',
+      url: 'https://lumatic.app',
+    },
+    tech: [
+      'JS', 'React', 'Node', 'Kubernetes',
+    ],
+  },
+  {
     name: 'Guardian News JS Client',
     desc: (
       <>
@@ -19,21 +49,6 @@ const data = [
     ],
   },
   {
-    name: 'Robovise',
-    desc: (
-      <>
-        A robo advisor built for the modern world.
-      </>
-    ),
-    link: {
-      type: 'site',
-      url: 'https://robovise.com',
-    },
-    tech: [
-      'JS', 'React', 'Webpack', 'AWS', 'Node', 'ECS',
-    ],
-  },
-  {
     name: 'DQO Index Calculator',
     desc: (
       <>
@@ -47,21 +62,6 @@ const data = [
     },
     tech: [
       'JS', 'React', 'Heroku', 'Node',
-    ],
-  },
-  {
-    name: 'Sump Thing',
-    desc: (
-      <>
-        An open source aquarium monitoring hardware/software solution.
-      </>
-    ),
-    link: {
-      type: 'github',
-      url: 'https://github.com/pyazo',
-    },
-    tech: [
-      'C++', 'C#', 'JS', 'React', 'Arduino', 'Node',
     ],
   },
   {
